@@ -9,7 +9,7 @@ class Recommend extends Component {
       <RecommendWrapper>
         {
           list.map(item => {
-            return <RecommendItem imgUrl={item.get('imgUrl')} />
+            return <RecommendItem imgUrl={item.get('imgUrl')} key={item.get('id')} />
           })
         }
       </RecommendWrapper>

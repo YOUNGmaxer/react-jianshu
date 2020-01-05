@@ -4,6 +4,7 @@ import Topic from './components/Topic';
 import List from './components/List';
 import Recommend from './components/Recommend';
 import Writer from './components/Writer';
+import { actionCreator } from './store';
 import {
   HomeWrapper,
   HomeLeft,
@@ -28,9 +29,16 @@ class Home extends Component {
       </div>
     )
   }
+
+  componentDidMount() {
+    this.props.changeHomeData();
+  }
 }
 
-const mapState = (state) => ({
+const mapDispatch = (dispatch) => ({
+  changeHomeData() {
+    dispatch(actionCreator.getHomeInfo());
+  }
 });
 
-export default connect(mapState, null)(Home);
+export default connect(null, mapDispatch)(Home);

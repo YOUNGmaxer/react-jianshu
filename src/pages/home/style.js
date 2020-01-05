@@ -42,6 +42,7 @@ export const TopicItem = styled.div`
   color: #000;
   border: 1px solid #dcdcdc;
   border-radius: 4px;
+  overflow: hidden;
   .topic-pic {
     display: block;
     float: left;
