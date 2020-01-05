@@ -1,0 +1,43 @@
+import { fromJS } from 'immutable';
+
+const defaultState = fromJS({
+  topicList: [{
+    id: 1,
+    title: '社会热点',
+    imgUrl: 'https://upload.jianshu.io/collections/images/12/1239240801.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120/format/webp'
+  }, {
+    id: 2,
+    title: '手绘',
+    imgUrl: 'https://upload.jianshu.io/collections/images/70/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120/format/webp'
+  }],
+  articleList: [{
+    id: 1,
+    title: '凡事要赶早，好戏在后头',
+    desc: '征文，征文，征文啦！ 简书的改革活动，一茬接一茬，只要有时间，有精力，肯付出，你完全可以做到高回报收益。 且听我细细道来。 每日抽奖送收益加成卡...',
+    imgUrl: 'https://upload-images.jianshu.io/upload_images/20593466-25b2475773847583.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  }, {
+    id: 2,
+    title: '凡事要赶早，好戏在后头',
+    desc: '征文，征文，征文啦！ 简书的改革活动，一茬接一茬，只要有时间，有精力，肯付出，你完全可以做到高回报收益。 且听我细细道来。 每日抽奖送收益加成卡...',
+    imgUrl: 'https://upload-images.jianshu.io/upload_images/20593466-25b2475773847583.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  }, {
+    id: 3,
+    title: '凡事要赶早，好戏在后头',
+    desc: '征文，征文，征文啦！ 简书的改革活动，一茬接一茬，只要有时间，有精力，肯付出，你完全可以做到高回报收益。 且听我细细道来。 每日抽奖送收益加成卡...',
+    imgUrl: 'https://upload-images.jianshu.io/upload_images/20593466-25b2475773847583.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240'
+  }],
+  recommendList: [{
+    id: 1,
+    imgUrl: 'https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png'
+  }, {
+    id: 1,
+    imgUrl: 'https://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png'
+  }]
+});
+
+export default (state = defaultState, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  }
+}
