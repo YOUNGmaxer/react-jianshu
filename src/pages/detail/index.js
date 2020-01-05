@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
+import { withRouter } from 'react-router-dom';
 
-class Detail extends Component {
+class Detail extends PureComponent {
   render() {
     return (
     <div>Detail {this.props.match.params.id}</div>
@@ -8,4 +9,4 @@ class Detail extends Component {
   }
 }
 
-export default Detail;
+export default withRouter(Detail);
