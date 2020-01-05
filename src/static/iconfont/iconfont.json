@@ -1,0 +1,30 @@
+{
+  "id": "1597588",
+  "name": "jianshu",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "jianshu repo",
+  "glyphs": [
+    {
+      "icon_id": "383602",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "1621077",
+      "name": "Aa",
+      "font_class": "Aa",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "3207736",
+      "name": "笔",
+      "font_class": "icon-checkin",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    }
+  ]
+}
