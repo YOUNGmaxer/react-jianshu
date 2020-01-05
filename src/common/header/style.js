@@ -21,7 +21,7 @@ export const Logo = styled.a.attrs({
 `;
 
 export const Nav = styled.div`
-  width: 960px;
+  width: 700px;
   height: 100%;
   padding-right: 70px;
   box-sizing: border-box;
@@ -103,6 +103,16 @@ export const SearchInfoTitle = styled.div`
 export const SearchInfoSwitch = styled.span`
   float: right;
   font-size: 13px;
+  cursor: pointer;
+
+  .spin {
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-right: 2px;
+    transition: all .4s ease-in;
+    transform-origin: center center;
+  }
 `;
 
 export const SearchInfoList = styled.div`
@@ -151,7 +161,7 @@ export const SearchWrapper = styled.div`
   float: left;
   position: relative;
 
-  .iconfont {
+  .zoom {
     position: absolute;
     right: 5px;
     bottom: 5px;
